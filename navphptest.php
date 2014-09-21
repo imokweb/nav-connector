@@ -22,8 +22,7 @@ stream_wrapper_register('http', 'NTLMStream') or die("Failed to register protoco
 $baseURL = 'http://86.35.240.116:7149/Test/WS/Test_UnicSpot%20-%20Productie/Page/'; 
 
 
-
-	$client = new NTLMSoapClient($baseURL.'SiteIntegrationCustomer');
+$client = new NTLMSoapClient($baseURL.'SiteIntegrationCustomer'); // La linia asta apare eroarea respectiva
 
 	
 // Find the first Company in the Companies 
